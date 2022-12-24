@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bbauti / dolar</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="loading" style="background-color: black;">
+        <div id="loader" class="center"></div>
+    </div>
+    <canvas class="orb-canvas"></canvas>
+    <div class="main">
+        <div class="header">
+            <h1 class="text-gradient title">
+                Dolar
+            </h1>
+            <p class="sub">
+                Comproba el precio del dolar!
+            </p>
+            <form id="form" class="add">
+                <div class="addtodo">
+                    <input id="input" type="number" class="formAdd" value="1">
+                </div>
+            </form>
+        </div>
+        <div class="blue dolar gradient-border">
+            <h1 class="dolarTitulo">Blue</h1>
+            <div class="precios">
+                <p class="valorDolar" id="valorBlue"></p>
+                <div id="compraVenta" style="margin-left:1rem">
+                    <div id="compra" class="valorIcon">
+                        <p class="category">C</p>
+                        <p class="valorIconText" id="valorCompraBlue"></p>
+                    </div>
+                    <div id="venta" class="valorIcon">
+                        <p class="category">V</p>
+                        <p class="valorIconText" id="valorVentaBlue"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="oficial dolar gradient-border">
+            <h1 class="dolarTitulo">Oficial</h1>
+            <div class="precios">
+                <p class="valorDolar" id="valorOficial"></p>
+                <div id="compraVenta" style="margin-left:1rem">
+                    <div id="compra" class="valorIcon">
+                        <p class="category">C</p>
+                        <p class="valorIconText" id="valorCompraOficial"></p>
+                    </div>
+                    <div id="venta" class="valorIcon">
+                        <p class="category">V</p>
+                        <p class="valorIconText" id="valorVentaOficial"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Buttons -->
+        <button class="overlay__btn overlay__btn--colors">
+            <span>Resetear colores</span>
+            <span class="overlay__btn-emoji">🎨</span>
+        </button>
+    </div>
+    <script src="https://raw.githubusercontent.com/gibransarraf/AntiOverflowFontResizer.js/master/AntiOverflowFontResizer.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <script src="js/loader.js"></script>
+    <script src="js/dolar.js"></script>
+    <script type="module" src="js/color.js"></script>
+</body>
+</html>
