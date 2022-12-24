@@ -165,8 +165,7 @@ strong {
             var(--base) 25%,
             var(--complimentary2));
     background-clip: text;
-    color;
-    transparent;
+    color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
