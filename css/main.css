@@ -175,28 +175,24 @@ strong {
 
 /* form */
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
 .add {
     padding-top: 1rem;
 }
 
 .addtodo {
+    position: relative;
     display: flex;
-    justify-content: center;
-}
-
-.todosend {
-    display: flex;
-    margin-left: 0.2rem;
-    height: 1rem;
-    border: 1px solid #242424;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    margin-top: 0.5rem;
-    font-size: 1rem;
-    align-items: center;
-    justify-content: center;
-    background-color: #42D392;
-    transition: all 0.3s cubic-bezier(0.37, 1.15, 0, 0.97)
+    margin: 0 auto;
+    width: max-content;
 }
 
 .formAdd {
@@ -210,14 +206,33 @@ strong {
     color: white;
     max-width: 30vw;
     transition: all 0.3s cubic-bezier(0.23, 0.9, 0.35, 0.52);
+    padding-left: 25px;
+    padding-right: 30px;
 }
 
-.formerror {
-    border-color: rgba(255, 0, 0, 0.5);
+.icon {
+    position: absolute;
+    top: 14px;
+    left: 5px;
+    color: white;
+    font-size: 1.3rem;
 }
 
-.buttonerror {
-    background-color: rgb(214, 67, 67);
+.iconArs {
+    position: absolute;
+    top: 14px;
+    right: 10px;
+    fill: white;
+    font-size: 1.3rem;
+}
+
+.iconUsd {
+    position: absolute;
+    top: 14px;
+    right: 10px;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 600;
 }
 
 /* secciones */
@@ -346,10 +361,11 @@ a {
     }
 
     .add {
-        padding-bottom: 1rem;
+        margin-bottom: 5vw;
     }
 
     .formAdd {
+        width: 90vw;
         max-width: none;
     }
 

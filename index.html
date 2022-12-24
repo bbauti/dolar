@@ -22,7 +22,10 @@
             </p>
             <form id="form" class="add">
                 <div class="addtodo">
+                    <iconify-icon icon="material-symbols:attach-money" class="icon"></iconify-icon>
                     <input id="input" type="number" class="formAdd" value="1">
+                    <!-- <svg width="1em" height="1em" class="iconArs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 60.29"><path d="M101.25,54.65l-.63,0c-1.39-.08-2.75-.22-4.09-.39s-2.63-.38-3.86-.6-2.42-.48-3.56-.79V42.68c1.49.13,3.11.24,4.85.32s3.49.16,5.27.2,3.44.07,5,.07a16.77,16.77,0,0,0,3.63-.33A4.37,4.37,0,0,0,110,41.88a2.68,2.68,0,0,0,.72-2v-.79a2.49,2.49,0,0,0-1-2.17,4,4,0,0,0-2.41-.73h-3.49q-7.65,0-11.61-3.36t-4-11.28V19.39q0-7.25,4.36-10.85a16.43,16.43,0,0,1,8.64-3.36V0h7.12V5c.89,0,1.76.12,2.6.21,1.83.2,3.54.44,5.15.73s3,.58,4.32.89V17q-3-.27-6.83-.43c-2.53-.11-4.82-.17-6.89-.17a18.2,18.2,0,0,0-3.3.27,4.05,4.05,0,0,0-2.24,1,3.13,3.13,0,0,0-.79,2.31v.66a3.05,3.05,0,0,0,1,2.51,5.1,5.1,0,0,0,3.24.85H109a15.36,15.36,0,0,1,7.68,1.75,11.42,11.42,0,0,1,4.62,4.75,14.71,14.71,0,0,1,1.55,6.83v2.18q0,6.26-2.18,9.56a10.65,10.65,0,0,1-6.2,4.45,30.33,30.33,0,0,1-6.13,1v5.67h-7.12V54.65ZM0,54.35l14.51-49h16L45,54.35H31.73l-2-7.78H15l-1.91,7.78ZM18,35.09h8.77L22.36,16.23,18,35.09ZM48.12,54.35v-49H69A21.32,21.32,0,0,1,75,6.13a11.22,11.22,0,0,1,4.68,2.68,12.24,12.24,0,0,1,3.07,5,24.75,24.75,0,0,1,1.09,8,23.42,23.42,0,0,1-.53,5.28,13.82,13.82,0,0,1-1.42,3.79,10,10,0,0,1-2.11,2.61,16.11,16.11,0,0,1-2.6,1.84l8.51,19h-13L65.79,37.46H60.91V54.35Zm12.79-27h5.81a5.14,5.14,0,0,0,1.84-.3,3.32,3.32,0,0,0,1.36-1,4.26,4.26,0,0,0,.82-1.68A9.8,9.8,0,0,0,71,21.9a9.44,9.44,0,0,0-.26-2.44,3.16,3.16,0,0,0-2.18-2.38,6,6,0,0,0-1.84-.26H60.91V27.31Z"/></svg> -->
+                    <p class="iconUsd">USD</p>
                 </div>
             </form>
         </div>
@@ -58,13 +61,18 @@
                 </div>
             </div>
         </div>
+        <div class="impuestos dolar gradient-border">
+            <h1 class="dolarTitulo">Impuestos</h1>
+            <div class="precios">
+                <p class="valorDolar" id="impuestosOficial"></p>
+            </div>
+        </div>
         <!-- Buttons -->
         <button class="overlay__btn overlay__btn--colors">
             <span>Resetear colores</span>
             <span class="overlay__btn-emoji">🎨</span>
         </button>
     </div>
-    <script src="https://raw.githubusercontent.com/gibransarraf/AntiOverflowFontResizer.js/master/AntiOverflowFontResizer.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
     <script src="js/loader.js"></script>
     <script src="js/dolar.js"></script>
